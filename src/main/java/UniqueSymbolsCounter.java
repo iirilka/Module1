@@ -10,7 +10,7 @@ public class UniqueSymbolsCounter {
                 }
             }
         }
-        difference=array.length-number;
+        difference = array.length - number;
         return difference;
     }
 }

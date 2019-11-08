@@ -9,6 +9,7 @@ public class ModuleTest {
     private static HorseMove horseMoveInstance;
     private static AreaOfTriangle areaOfTriangleInstance;
     private static ParenthesesCheck parenthesesCheckInstance;
+    private static MaxDepthTreeNode maxDepthTreeNodeInstance;
     int[] array = {1, 4, 5, 1, 1, 3};
 
     @Before
@@ -18,6 +19,7 @@ public class ModuleTest {
         horseMoveInstance = new HorseMove();
         areaOfTriangleInstance = new AreaOfTriangle();
         parenthesesCheckInstance = new ParenthesesCheck();
+        maxDepthTreeNodeInstance = new MaxDepthTreeNode();
 
     }
 
@@ -51,6 +53,10 @@ public class ModuleTest {
         assertTrue(permissible);
         boolean unacceptable = parenthesesCheckInstance.checkParentheses("({{[]}");
         assertFalse(unacceptable);
+    }
+    @Test
+    public void MaxDepthTreeNodeTest(){
+      
     }
 
 }
